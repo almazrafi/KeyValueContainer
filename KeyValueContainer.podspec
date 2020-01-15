@@ -10,6 +10,7 @@ Pod::Spec.new do |spec|
 
   spec.swift_version = '5.0'
   spec.requires_arc = true
+  spec.source_files = 'Sources/**/*.swift'
 
   spec.ios.frameworks = 'Foundation'
   spec.ios.deployment_target = "10.0"
