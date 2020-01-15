@@ -7,7 +7,7 @@
 [![Platforms](https://img.shields.io/cocoapods/p/KeyValueContainer.svg?style=flat)](https://developer.apple.com/discover/)
 [![Xcode](https://img.shields.io/badge/Xcode-11-blue.svg)](https://developer.apple.com/xcode)
 [![Swift](https://img.shields.io/badge/Swift-5.0-orange.svg)](https://swift.org)
-[![License](https://img.shields.io/github/license/almazrafi/KeyValueContainer.svg?style=flat)](https://opensource.org/licenses/MIT)
+[![License](https://img.shields.io/github/license/almazrafi/KeyValueContainer.svg)](https://opensource.org/licenses/MIT)
 
 ## Requirements
 - iOS 10.0+ / macOS 10.12+ / watchOS 3.0+ / tvOS 10.0+
