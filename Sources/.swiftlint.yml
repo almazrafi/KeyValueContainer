@@ -1,0 +1,7 @@
+disabled_rules:
+  - extension_access_modifier
+
+opt_in_rules:
+  - no_extension_access_modifier
+  - explicit_acl
+  - explicit_top_level_acl
