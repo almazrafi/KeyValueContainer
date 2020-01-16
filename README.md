@@ -14,6 +14,38 @@
 - Xcode 10.2+
 - Swift 5.0+
 
+## Usage
+#### Declare a container:
+``` swift
+extension PersistentStorage {
+    var foobar: KeyValueContainer<Int> {
+        makeContainer()
+    }
+}
+```
+
+This will create a container with the same key as property name: "foobar"
+
+#### Reading a value from the storage:
+``` swift
+let foobar = PersistentStorage.default.foobar.value
+```
+
+Same as using UserDefaults:
+``` swift
+let foobar = UserDefaults.standard.integer(forKey: "foobar")
+```
+
+#### Writing a value to the storage:
+``` swift
+PersistentStorage.default.foobar.value = 123
+```
+
+Same as using UserDefaults:
+``` swift
+UserDefaults.standard.set(123, forKey: "foobar")
+```
+
 ## Installation
 ### CocoaPods
 [CocoaPods](http://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
