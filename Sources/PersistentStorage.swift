@@ -4,26 +4,38 @@ public final class PersistentStorage: KeyValueStorage {
 
     // MARK: - Type Properties
 
-    public static let `default` = PersistentStorage()!
+    public static let `default` = PersistentStorage(
+        userDefaults: .standard,
+        suiteName: nil,
+        keyPrefix: ""
+    )
 
     // MARK: - Instance Properties
 
-    private let userDefaults: UserDefaults
+    internal let userDefaults: UserDefaults
 
     public let suiteName: String?
     public let keyPrefix: String
 
     // MARK: - Initializers
 
-    public init?(suiteName: String? = nil, keyPrefix: String = "") {
-        guard let userDefaults = UserDefaults(suiteName: suiteName) else {
-            return nil
-        }
-
+    private init(userDefaults: UserDefaults, suiteName: String?, keyPrefix: String) {
         self.userDefaults = userDefaults
 
         self.suiteName = suiteName
         self.keyPrefix = keyPrefix
+    }
+
+    public convenience init?(suiteName: String?, keyPrefix: String = "") {
+        guard let userDefaults = UserDefaults(suiteName: suiteName) else {
+            return nil
+        }
+
+        self.init(
+            userDefaults: userDefaults,
+            suiteName: suiteName,
+            keyPrefix: keyPrefix
+        )
     }
 
     // MARK: - Instance Methods
@@ -31,8 +43,6 @@ public final class PersistentStorage: KeyValueStorage {
     private func resolveKey(_ key: String) -> String {
         return keyPrefix.appending(key)
     }
-
-    // MARK: -
 
     public func value<T: Codable>(of type: T.Type, forKey key: String) -> T? {
         let key = resolveKey(key)
