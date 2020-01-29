@@ -112,10 +112,6 @@ let package = Package(
 )
 ```
 
-### Manually
-If you prefer not to use dependency managers, you can integrate KeyValueContainer into your project manually
-by adding the [KeyValueContainer](KeyValueContainer) folder to your Xcode project.
-
 ## Communication
 - If you need help, open an issue.
 - If you found a bug, open an issue.
