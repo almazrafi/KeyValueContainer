@@ -1,5 +1,5 @@
 # KeyValueContainer
-[![Travis CI](https://travis-ci.com/almazrafi/KeyValueContainer.svg?branch=master)](https://travis-ci.com/almazrafi/KeyValueContainer)
+[![Build Status](https://github.com/almazrafi/KeyValueContainer/workflows/CI/badge.svg?branch=master)](https://github.com/almazrafi/KeyValueContainer/actions)
 [![Codecov](https://codecov.io/gh/almazrafi/KeyValueContainer/branch/master/graph/badge.svg)](https://codecov.io/gh/almazrafi/KeyValueContainer)
 [![Cocoapods](https://img.shields.io/cocoapods/v/KeyValueContainer.svg?style=flat)](http://cocoapods.org/pods/KeyValueContainer)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-Compatible-brightgreen.svg?style=flat)](https://github.com/Carthage/Carthage)
