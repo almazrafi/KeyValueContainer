@@ -80,7 +80,6 @@
 		C0A01A1B23CB901C00AC2C3A /* .codecov.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .codecov.yml; sourceTree = "<group>"; };
 		C0A01A1C23CB901C00AC2C3A /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		C0A01A1D23CB901C00AC2C3A /* .ruby-version */ = {isa = PBXFileReference; lastKnownFileType = text; path = ".ruby-version"; sourceTree = "<group>"; };
-		C0A01A1E23CB901C00AC2C3A /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .travis.yml; sourceTree = "<group>"; };
 		C0A01A2923CB90F200AC2C3A /* KeyValueContainer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KeyValueContainer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0A01A3123CB90F200AC2C3A /* KeyValueContainer Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KeyValueContainer Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0A01A4723CB92EB00AC2C3A /* KeyValueContainer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KeyValueContainer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -152,7 +151,6 @@
 				C0A01A1D23CB901C00AC2C3A /* .ruby-version */,
 				C0007FFA23CBAAA5005F95E0 /* .swift-version */,
 				C0A01A1C23CB901C00AC2C3A /* .swiftlint.yml */,
-				C0A01A1E23CB901C00AC2C3A /* .travis.yml */,
 				C0A01A6623CB9B5900AC2C3A /* Brewfile */,
 				C0A01A6423CB9B1600AC2C3A /* Dangerfile */,
 				C0A01A6523CB9B1600AC2C3A /* Gemfile */,
@@ -721,6 +719,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.almazrafi.KeyValueContainer;
 				PRODUCT_NAME = KeyValueContainer;
 				SKIP_INSTALL = YES;
@@ -749,6 +748,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.almazrafi.KeyValueContainer;
 				PRODUCT_NAME = KeyValueContainer;
 				SKIP_INSTALL = YES;
@@ -819,6 +819,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.almazrafi.KeyValueContainer;
 				PRODUCT_NAME = KeyValueContainer;
 				SDKROOT = macosx;
@@ -848,6 +849,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.almazrafi.KeyValueContainer;
 				PRODUCT_NAME = KeyValueContainer;
 				SDKROOT = macosx;
@@ -919,6 +921,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.almazrafi.KeyValueContainer;
 				PRODUCT_NAME = KeyValueContainer;
 				SDKROOT = appletvos;
@@ -948,6 +951,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.almazrafi.KeyValueContainer;
 				PRODUCT_NAME = KeyValueContainer;
 				SDKROOT = appletvos;
