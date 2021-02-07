@@ -20,8 +20,8 @@ retain_unused_protocol_func_params: false
 
 format: xcode
 strict: false
-verbose: true
-quiet: false
+verbose: false
+quiet: true
 
 index_store_path: null
 clean_build: true

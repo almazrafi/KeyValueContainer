@@ -24,6 +24,8 @@ public final class PersistentStorage: KeyValueStorage {
 
         self.suiteName = suiteName
         self.keyPrefix = keyPrefix
+
+        print(suiteName)
     }
 
     public convenience init?(suiteName: String?, keyPrefix: String = "") {
