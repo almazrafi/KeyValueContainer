@@ -45,6 +45,12 @@ jobs:
         run: |
           gem install bundler
           bundle install --without=documentation
+          
+      - name: Periphery
+        run: |
+          brew update
+          brew tap peripheryapp/periphery
+          brew install periphery
       - name: Preparation
         run: |
           set -o pipefail
