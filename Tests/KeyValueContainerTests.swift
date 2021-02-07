@@ -2,6 +2,8 @@ import XCTest
 
 @testable import KeyValueContainer
 
+struct UnusedStruct { }
+
 class KeyValueContainerTests: XCTestCase {
 
     // MARK: - Instance Properties

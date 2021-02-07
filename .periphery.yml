@@ -1,0 +1,32 @@
+disable_update_check: true
+
+workspace: null
+project: KeyValueContainer.xcodeproj
+
+schemes:
+  - KeyValueContainer iOS
+
+targets:
+  - KeyValueContainer iOS
+  - KeyValueContainer Tests iOS
+
+index_exclude: []
+report_exclude: []
+
+retain_assign_only_properties: false
+retain_objc_accessible: false
+retain_public: true
+retain_unused_protocol_func_params: false
+
+format: xcode
+strict: false
+verbose: true
+quiet: false
+
+index_store_path: null
+clean_build: true
+skip_build: false
+
+build_arguments:
+  - -destination
+  - generic/platform=iOS

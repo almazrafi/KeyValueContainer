@@ -22,6 +22,9 @@
 		C01C142923CBCA91004108B4 /* PersistentStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01C142823CBCA91004108B4 /* PersistentStorageTests.swift */; };
 		C01C142A23CBCA91004108B4 /* PersistentStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01C142823CBCA91004108B4 /* PersistentStorageTests.swift */; };
 		C01C142B23CBCA91004108B4 /* PersistentStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01C142823CBCA91004108B4 /* PersistentStorageTests.swift */; };
+		C049234025CFE06C0024541C /* UnusedCass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C049233F25CFE06C0024541C /* UnusedCass.swift */; };
+		C049234125CFE06C0024541C /* UnusedCass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C049233F25CFE06C0024541C /* UnusedCass.swift */; };
+		C049234225CFE06C0024541C /* UnusedCass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C049233F25CFE06C0024541C /* UnusedCass.swift */; };
 		C057F01823CB8EEB00C2D895 /* KeyValueContainer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C057F00E23CB8EEB00C2D895 /* KeyValueContainer.framework */; };
 		C057F01D23CB8EEB00C2D895 /* KeyValueContainerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C057F01C23CB8EEB00C2D895 /* KeyValueContainerTests.swift */; };
 		C057F01F23CB8EEB00C2D895 /* KeyValueContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = C057F01123CB8EEB00C2D895 /* KeyValueContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -64,6 +67,7 @@
 		C01C141D23CBB84A004108B4 /* MockKeyValueStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockKeyValueStorage.swift; sourceTree = "<group>"; };
 		C01C142423CBC98A004108B4 /* PersistentStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentStorage.swift; sourceTree = "<group>"; };
 		C01C142823CBCA91004108B4 /* PersistentStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentStorageTests.swift; sourceTree = "<group>"; };
+		C049233F25CFE06C0024541C /* UnusedCass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnusedCass.swift; sourceTree = "<group>"; };
 		C057F00E23CB8EEB00C2D895 /* KeyValueContainer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KeyValueContainer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C057F01123CB8EEB00C2D895 /* KeyValueContainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyValueContainer.h; sourceTree = "<group>"; };
 		C057F01223CB8EEB00C2D895 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -183,6 +187,7 @@
 				C01C141523CBB3E3004108B4 /* KeyValueContainer.swift */,
 				C01C141923CBB451004108B4 /* KeyValueStorage.swift */,
 				C01C142423CBC98A004108B4 /* PersistentStorage.swift */,
+				C049233F25CFE06C0024541C /* UnusedCass.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -238,6 +243,7 @@
 				C057F00A23CB8EEB00C2D895 /* Sources */,
 				C057F00B23CB8EEB00C2D895 /* Frameworks */,
 				C057F00C23CB8EEB00C2D895 /* Resources */,
+				C02F832C25CFDE0E006EA3C2 /* Periphery */,
 			);
 			buildRules = (
 			);
@@ -255,6 +261,7 @@
 				C057F01323CB8EEB00C2D895 /* Sources */,
 				C057F01423CB8EEB00C2D895 /* Frameworks */,
 				C057F01523CB8EEB00C2D895 /* Resources */,
+				C02F833625CFDFE3006EA3C2 /* Periphery */,
 			);
 			buildRules = (
 			);
@@ -442,6 +449,42 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		C02F832C25CFDE0E006EA3C2 /* Periphery */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Periphery;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh Scripts/periphery.sh --targets \"KeyValueContainer iOS\" --schemes \"KeyValueContainer iOS\" --index-store-path ${BUILD_DIR}/../../Index/DataStore --skip-build\n";
+		};
+		C02F833625CFDFE3006EA3C2 /* Periphery */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Periphery;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh Scripts/periphery.sh --targets \"KeyValueContainer Tests iOS\" --schemes \"KeyValueContainer iOS\" --index-store-path ${BUILD_DIR}/../../Index/DataStore --skip-build\n";
+		};
 		C0A01A2323CB907300AC2C3A /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -504,6 +547,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C01C142523CBC98A004108B4 /* PersistentStorage.swift in Sources */,
+				C049234025CFE06C0024541C /* UnusedCass.swift in Sources */,
 				C01C141623CBB3E3004108B4 /* KeyValueContainer.swift in Sources */,
 				C01C141A23CBB451004108B4 /* KeyValueStorage.swift in Sources */,
 			);
@@ -524,6 +568,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C01C142623CBC98A004108B4 /* PersistentStorage.swift in Sources */,
+				C049234125CFE06C0024541C /* UnusedCass.swift in Sources */,
 				C01C141723CBB3E3004108B4 /* KeyValueContainer.swift in Sources */,
 				C01C141B23CBB451004108B4 /* KeyValueStorage.swift in Sources */,
 			);
@@ -544,6 +589,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C01C142723CBC98A004108B4 /* PersistentStorage.swift in Sources */,
+				C049234225CFE06C0024541C /* UnusedCass.swift in Sources */,
 				C01C141823CBB3E3004108B4 /* KeyValueContainer.swift in Sources */,
 				C01C141C23CBB451004108B4 /* KeyValueStorage.swift in Sources */,
 			);
