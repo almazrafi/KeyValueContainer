@@ -11,6 +11,7 @@ public final class KeyValueContainer<T: Codable> {
 
     public var value: T? {
         get {
+            let a = 123
             return storage.value(of: T.self, forKey: key) ?? defaultValue
         }
 
