@@ -51,6 +51,8 @@ jobs:
             -scheme "$IOS_SCHEME" \
             -destination "$IOS_DESTINATION" \
             -resultBundlePath "$IOS_RESULT_PATH" | xcpretty -f `xcpretty-json-formatter`
+            
+          bash <(curl -s https://codecov.io/bash) -cF ios -J 'KeyValueContainer'
       - name: Test macOS
         run: |
           xcodebuild clean build test \
@@ -58,6 +60,8 @@ jobs:
             -scheme "$MACOS_SCHEME" \
             -destination "$MACOS_DESTINATION" \
             -resultBundlePath "$MACOS_RESULT_PATH" | xcpretty -f `xcpretty-json-formatter`
+            
+          bash <(curl -s https://codecov.io/bash) -cF osx -J 'KeyValueContainer'
       - name: Test tvOS
         run: |
           xcodebuild clean build test \
@@ -65,6 +69,8 @@ jobs:
             -scheme "$TVOS_SCHEME" \
             -destination "$TVOS_DESTINATION" \
             -resultBundlePath "$TVOS_RESULT_PATH" | xcpretty -f `xcpretty-json-formatter`
+            
+          bash <(curl -s https://codecov.io/bash) -cF tvos -J 'KeyValueContainer'
       - name: Build watchOS
         run: |
           xcodebuild clean build \
