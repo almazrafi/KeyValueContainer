@@ -17,6 +17,10 @@ public final class PersistentStorage: KeyValueStorage {
     public let suiteName: String?
     public let keyPrefix: String
 
+    public var allKeys: [String] {
+        Array(userDefaults.dictionaryRepresentation().keys)
+    }
+
     // MARK: - Initializers
 
     private init(userDefaults: UserDefaults, suiteName: String?, keyPrefix: String) {
@@ -92,10 +96,14 @@ public final class PersistentStorage: KeyValueStorage {
         }
     }
 
-    public func setValue<T: Codable>(_ value: T?, forKey key: String) {
+    @discardableResult
+    public func setValue<T: Codable>(_ value: T?, forKey key: String) -> Bool {
         let key = resolveKey(key)
 
         switch value {
+        case nil:
+            return removeValue(forKey: key)
+
         case let bool as Bool:
             userDefaults.set(bool, forKey: key)
 
@@ -138,17 +146,29 @@ public final class PersistentStorage: KeyValueStorage {
                 .flatMap { $0 as? [Any] }?
                 .first
 
+            guard let storageValue = storageValue else {
+                return false
+            }
+
             userDefaults.set(storageValue, forKey: key)
         }
+
+        return true
     }
 
-    public func clear() {
-        let dictionaryRepresentation = userDefaults.dictionaryRepresentation()
+    @discardableResult
+    public func removeValue(forKey key: String) -> Bool {
+        userDefaults.removeObject(forKey: resolveKey(key))
 
-        dictionaryRepresentation.keys.forEach { key in
-            if key.hasPrefix(keyPrefix) {
-                userDefaults.removeObject(forKey: key)
-            }
-        }
+        return true
+    }
+
+    @discardableResult
+    public func clear() -> Bool {
+        allKeys
+            .filter { $0.hasPrefix(keyPrefix) }
+            .forEach { userDefaults.removeObject(forKey: $0) }
+
+        return true
     }
 }
