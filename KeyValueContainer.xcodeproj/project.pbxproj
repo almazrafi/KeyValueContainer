@@ -22,9 +22,37 @@
 		C01C142923CBCA91004108B4 /* PersistentStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01C142823CBCA91004108B4 /* PersistentStorageTests.swift */; };
 		C01C142A23CBCA91004108B4 /* PersistentStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01C142823CBCA91004108B4 /* PersistentStorageTests.swift */; };
 		C01C142B23CBCA91004108B4 /* PersistentStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01C142823CBCA91004108B4 /* PersistentStorageTests.swift */; };
+		C039768C28B6A1AE00B3CE1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04BF5A328B6979E005F3BEB /* ViewController.swift */; };
+		C039768D28B6A1AE00B3CE1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04BF59F28B6979E005F3BEB /* AppDelegate.swift */; };
+		C03976AD28B6A27200B3CE1C /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C03976AC28B6A27200B3CE1C /* Launch.storyboard */; };
+		C03976B128B6A62700B3CE1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04BF59F28B6979E005F3BEB /* AppDelegate.swift */; };
+		C03976B228B6A62C00B3CE1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04BF5A328B6979E005F3BEB /* ViewController.swift */; };
+		C03976BB28B73FBA00B3CE1C /* MemoryStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03976B728B73E3F00B3CE1C /* MemoryStorage.swift */; };
+		C03976BC28B73FBA00B3CE1C /* MemoryStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03976B728B73E3F00B3CE1C /* MemoryStorage.swift */; };
+		C03976BD28B73FBB00B3CE1C /* MemoryStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03976B728B73E3F00B3CE1C /* MemoryStorage.swift */; };
+		C03976BF28B7422900B3CE1C /* MemoryStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03976BE28B7422900B3CE1C /* MemoryStorageTests.swift */; };
+		C03976C028B7422900B3CE1C /* MemoryStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03976BE28B7422900B3CE1C /* MemoryStorageTests.swift */; };
+		C03976C128B7422900B3CE1C /* MemoryStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03976BE28B7422900B3CE1C /* MemoryStorageTests.swift */; };
+		C04BF59628B691F5005F3BEB /* KeychainStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04BF59528B691F5005F3BEB /* KeychainStorageTests.swift */; };
+		C04BF59828B691F5005F3BEB /* KeychainStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04BF59528B691F5005F3BEB /* KeychainStorageTests.swift */; };
+		C04BF5AC28B6979F005F3BEB /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C04BF5AA28B6979F005F3BEB /* Launch.storyboard */; };
+		C0579E1B28B74BAF0090F90D /* KeyValueContainer_watchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = C0579E1A28B74BAF0090F90D /* KeyValueContainer_watchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C0579E1F28B74BCA0090F90D /* KeyValueContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01C141523CBB3E3004108B4 /* KeyValueContainer.swift */; };
+		C0579E2028B74BCE0090F90D /* KeyValueContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = C057F01123CB8EEB00C2D895 /* KeyValueContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C0579E2128B74BD30090F90D /* MemoryStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03976B728B73E3F00B3CE1C /* MemoryStorage.swift */; };
+		C0579E2228B74BD60090F90D /* PersistentStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01C142423CBC98A004108B4 /* PersistentStorage.swift */; };
+		C0579E2328B74BD90090F90D /* KeyValueStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01C141923CBB451004108B4 /* KeyValueStorage.swift */; };
+		C0579E2428B74BEF0090F90D /* KeychainAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06DC97D28B637670076EDFA /* KeychainAccessibility.swift */; };
+		C0579E2528B74BEF0090F90D /* KeychainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06DC97F28B638EA0076EDFA /* KeychainStorage.swift */; };
 		C057F01823CB8EEB00C2D895 /* KeyValueContainer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C057F00E23CB8EEB00C2D895 /* KeyValueContainer.framework */; };
 		C057F01D23CB8EEB00C2D895 /* KeyValueContainerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C057F01C23CB8EEB00C2D895 /* KeyValueContainerTests.swift */; };
 		C057F01F23CB8EEB00C2D895 /* KeyValueContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = C057F01123CB8EEB00C2D895 /* KeyValueContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C06DC97E28B637670076EDFA /* KeychainAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06DC97D28B637670076EDFA /* KeychainAccessibility.swift */; };
+		C06DC98028B638EA0076EDFA /* KeychainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06DC97F28B638EA0076EDFA /* KeychainStorage.swift */; };
+		C06DC98128B638EA0076EDFA /* KeychainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06DC97F28B638EA0076EDFA /* KeychainStorage.swift */; };
+		C06DC98228B638EA0076EDFA /* KeychainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06DC97F28B638EA0076EDFA /* KeychainStorage.swift */; };
+		C06DC98328B638ED0076EDFA /* KeychainAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06DC97D28B637670076EDFA /* KeychainAccessibility.swift */; };
+		C06DC98428B638EE0076EDFA /* KeychainAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06DC97D28B637670076EDFA /* KeychainAccessibility.swift */; };
 		C0A01A3223CB90F200AC2C3A /* KeyValueContainer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A01A2923CB90F200AC2C3A /* KeyValueContainer.framework */; };
 		C0A01A4023CB912300AC2C3A /* KeyValueContainerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C057F01C23CB8EEB00C2D895 /* KeyValueContainerTests.swift */; };
 		C0A01A4123CB912C00AC2C3A /* KeyValueContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = C057F01123CB8EEB00C2D895 /* KeyValueContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -34,6 +62,34 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		C039764C28B69F8B00B3CE1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C057F00523CB8EEB00C2D895 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C04BF59C28B6979E005F3BEB;
+			remoteInfo = "KeyValueContainer Tests Host iOS";
+		};
+		C039764E28B69FA200B3CE1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C057F00523CB8EEB00C2D895 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C04BF59C28B6979E005F3BEB;
+			remoteInfo = "KeyValueContainer Tests Host iOS";
+		};
+		C039765028B69FA400B3CE1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C057F00523CB8EEB00C2D895 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C04BF59C28B6979E005F3BEB;
+			remoteInfo = "KeyValueContainer Tests Host iOS";
+		};
+		C03976AF28B6A2BE00B3CE1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C057F00523CB8EEB00C2D895 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C039767928B6A19900B3CE1C;
+			remoteInfo = "KeyValueContainer Tests Host tvOS";
+		};
 		C057F01923CB8EEB00C2D895 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C057F00523CB8EEB00C2D895 /* Project object */;
@@ -64,12 +120,27 @@
 		C01C141D23CBB84A004108B4 /* MockKeyValueStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockKeyValueStorage.swift; sourceTree = "<group>"; };
 		C01C142423CBC98A004108B4 /* PersistentStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentStorage.swift; sourceTree = "<group>"; };
 		C01C142823CBCA91004108B4 /* PersistentStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentStorageTests.swift; sourceTree = "<group>"; };
+		C039767A28B6A19900B3CE1C /* KeyValueContainer Tests Host tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KeyValueContainer Tests Host tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C03976AC28B6A27200B3CE1C /* Launch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Launch.storyboard; sourceTree = "<group>"; };
+		C03976B728B73E3F00B3CE1C /* MemoryStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryStorage.swift; sourceTree = "<group>"; };
+		C03976BE28B7422900B3CE1C /* MemoryStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryStorageTests.swift; sourceTree = "<group>"; };
+		C04BF59528B691F5005F3BEB /* KeychainStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStorageTests.swift; sourceTree = "<group>"; };
+		C04BF59D28B6979E005F3BEB /* KeyValueContainer Tests Host iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KeyValueContainer Tests Host iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C04BF59F28B6979E005F3BEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C04BF5A328B6979E005F3BEB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C04BF5AB28B6979F005F3BEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Launch.storyboard; sourceTree = "<group>"; };
+		C04BF5AD28B6979F005F3BEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0579E1828B74BAF0090F90D /* KeyValueContainer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KeyValueContainer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0579E1A28B74BAF0090F90D /* KeyValueContainer_watchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyValueContainer_watchOS.h; sourceTree = "<group>"; };
 		C057F00E23CB8EEB00C2D895 /* KeyValueContainer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KeyValueContainer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C057F01123CB8EEB00C2D895 /* KeyValueContainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyValueContainer.h; sourceTree = "<group>"; };
 		C057F01223CB8EEB00C2D895 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C057F01723CB8EEB00C2D895 /* KeyValueContainer Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KeyValueContainer Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C057F01C23CB8EEB00C2D895 /* KeyValueContainerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueContainerTests.swift; sourceTree = "<group>"; };
 		C057F01E23CB8EEB00C2D895 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C06DC97C28B6371E0076EDFA /* Mintfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Mintfile; sourceTree = "<group>"; };
+		C06DC97D28B637670076EDFA /* KeychainAccessibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainAccessibility.swift; sourceTree = "<group>"; };
+		C06DC97F28B638EA0076EDFA /* KeychainStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStorage.swift; sourceTree = "<group>"; };
 		C0A01A1423CB8FF300AC2C3A /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		C0A01A1523CB8FFC00AC2C3A /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		C0A01A1623CB900800AC2C3A /* KeyValueContainer.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = KeyValueContainer.podspec; sourceTree = "<group>"; };
@@ -87,10 +158,30 @@
 		C0A01A6323CB9B0A00AC2C3A /* Scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Scripts; sourceTree = "<group>"; };
 		C0A01A6423CB9B1600AC2C3A /* Dangerfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Dangerfile; sourceTree = "<group>"; };
 		C0A01A6523CB9B1600AC2C3A /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
-		C0A01A6623CB9B5900AC2C3A /* Brewfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Brewfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C039767728B6A19900B3CE1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C04BF59A28B6979E005F3BEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0579E1528B74BAF0090F90D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C057F00B23CB8EEB00C2D895 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -139,11 +230,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C03976AB28B6A24D00B3CE1C /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				C04BF5AA28B6979F005F3BEB /* Launch.storyboard */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		C03976AE28B6A27700B3CE1C /* tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				C03976AC28B6A27200B3CE1C /* Launch.storyboard */,
+			);
+			path = tvOS;
+			sourceTree = "<group>";
+		};
+		C04BF59E28B6979E005F3BEB /* TestsHost */ = {
+			isa = PBXGroup;
+			children = (
+				C04BF5B128B6986C005F3BEB /* Resources */,
+				C04BF5B228B69876005F3BEB /* Sources */,
+				C04BF5AD28B6979F005F3BEB /* Info.plist */,
+			);
+			path = TestsHost;
+			sourceTree = "<group>";
+		};
+		C04BF5B128B6986C005F3BEB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C03976AB28B6A24D00B3CE1C /* iOS */,
+				C03976AE28B6A27700B3CE1C /* tvOS */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C04BF5B228B69876005F3BEB /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C04BF59F28B6979E005F3BEB /* AppDelegate.swift */,
+				C04BF5A328B6979E005F3BEB /* ViewController.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		C0579E1928B74BAF0090F90D /* KeyValueContainer watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				C0579E1A28B74BAF0090F90D /* KeyValueContainer_watchOS.h */,
+			);
+			path = "KeyValueContainer watchOS";
+			sourceTree = "<group>";
+		};
 		C057F00423CB8EEB00C2D895 = {
 			isa = PBXGroup;
 			children = (
 				C057F01023CB8EEB00C2D895 /* Sources */,
 				C057F01B23CB8EEB00C2D895 /* Tests */,
+				C04BF59E28B6979E005F3BEB /* TestsHost */,
+				C0579E1928B74BAF0090F90D /* KeyValueContainer watchOS */,
 				C057F00F23CB8EEB00C2D895 /* Products */,
 				C0A01A6323CB9B0A00AC2C3A /* Scripts */,
 				C0A01A1B23CB901C00AC2C3A /* .codecov.yml */,
@@ -151,10 +296,10 @@
 				C0A01A1D23CB901C00AC2C3A /* .ruby-version */,
 				C0007FFA23CBAAA5005F95E0 /* .swift-version */,
 				C0A01A1C23CB901C00AC2C3A /* .swiftlint.yml */,
-				C0A01A6623CB9B5900AC2C3A /* Brewfile */,
 				C0A01A6423CB9B1600AC2C3A /* Dangerfile */,
 				C0A01A6523CB9B1600AC2C3A /* Gemfile */,
 				C0A01A1623CB900800AC2C3A /* KeyValueContainer.podspec */,
+				C06DC97C28B6371E0076EDFA /* Mintfile */,
 				C0A01A1923CB900900AC2C3A /* LICENSE */,
 				C0A01A1823CB900900AC2C3A /* Package.swift */,
 				C0A01A1723CB900900AC2C3A /* README.md */,
@@ -170,6 +315,9 @@
 				C0A01A3123CB90F200AC2C3A /* KeyValueContainer Tests macOS.xctest */,
 				C0A01A4723CB92EB00AC2C3A /* KeyValueContainer.framework */,
 				C0A01A4F23CB92EB00AC2C3A /* KeyValueContainer Tests tvOS.xctest */,
+				C04BF59D28B6979E005F3BEB /* KeyValueContainer Tests Host iOS.app */,
+				C039767A28B6A19900B3CE1C /* KeyValueContainer Tests Host tvOS.app */,
+				C0579E1828B74BAF0090F90D /* KeyValueContainer.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -177,12 +325,11 @@
 		C057F01023CB8EEB00C2D895 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				C0A01A1423CB8FF300AC2C3A /* .swiftlint.yml */,
-				C057F01223CB8EEB00C2D895 /* Info.plist */,
+				C06DC97A28B633680076EDFA /* Storage */,
 				C057F01123CB8EEB00C2D895 /* KeyValueContainer.h */,
 				C01C141523CBB3E3004108B4 /* KeyValueContainer.swift */,
-				C01C141923CBB451004108B4 /* KeyValueStorage.swift */,
-				C01C142423CBC98A004108B4 /* PersistentStorage.swift */,
+				C0A01A1423CB8FF300AC2C3A /* .swiftlint.yml */,
+				C057F01223CB8EEB00C2D895 /* Info.plist */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -190,18 +337,49 @@
 		C057F01B23CB8EEB00C2D895 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				C0A01A1523CB8FFC00AC2C3A /* .swiftlint.yml */,
-				C057F01E23CB8EEB00C2D895 /* Info.plist */,
+				C04BF59528B691F5005F3BEB /* KeychainStorageTests.swift */,
 				C057F01C23CB8EEB00C2D895 /* KeyValueContainerTests.swift */,
+				C03976BE28B7422900B3CE1C /* MemoryStorageTests.swift */,
 				C01C141D23CBB84A004108B4 /* MockKeyValueStorage.swift */,
 				C01C142823CBCA91004108B4 /* PersistentStorageTests.swift */,
+				C0A01A1523CB8FFC00AC2C3A /* .swiftlint.yml */,
+				C057F01E23CB8EEB00C2D895 /* Info.plist */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		C06DC97A28B633680076EDFA /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				C06DC97B28B633780076EDFA /* Keychain */,
+				C01C141923CBB451004108B4 /* KeyValueStorage.swift */,
+				C01C142423CBC98A004108B4 /* PersistentStorage.swift */,
+				C03976B728B73E3F00B3CE1C /* MemoryStorage.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		C06DC97B28B633780076EDFA /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				C06DC97D28B637670076EDFA /* KeychainAccessibility.swift */,
+				C06DC97F28B638EA0076EDFA /* KeychainStorage.swift */,
+			);
+			path = Keychain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		C0579E1328B74BAF0090F90D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0579E2028B74BCE0090F90D /* KeyValueContainer.h in Headers */,
+				C0579E1B28B74BAF0090F90D /* KeyValueContainer_watchOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C057F00923CB8EEB00C2D895 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -229,6 +407,58 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		C039767928B6A19900B3CE1C /* KeyValueContainer Tests Host tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C039768828B6A19A00B3CE1C /* Build configuration list for PBXNativeTarget "KeyValueContainer Tests Host tvOS" */;
+			buildPhases = (
+				C039767628B6A19900B3CE1C /* Sources */,
+				C039767728B6A19900B3CE1C /* Frameworks */,
+				C039767828B6A19900B3CE1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "KeyValueContainer Tests Host tvOS";
+			productName = "KeyValueContainer Tests Host tvOS";
+			productReference = C039767A28B6A19900B3CE1C /* KeyValueContainer Tests Host tvOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C04BF59C28B6979E005F3BEB /* KeyValueContainer Tests Host iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C04BF5AE28B6979F005F3BEB /* Build configuration list for PBXNativeTarget "KeyValueContainer Tests Host iOS" */;
+			buildPhases = (
+				C04BF59928B6979E005F3BEB /* Sources */,
+				C04BF59A28B6979E005F3BEB /* Frameworks */,
+				C04BF59B28B6979E005F3BEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "KeyValueContainer Tests Host iOS";
+			productName = "KeyValueContainer Tests Host iOS";
+			productReference = C04BF59D28B6979E005F3BEB /* KeyValueContainer Tests Host iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C0579E1728B74BAF0090F90D /* KeyValueContainer watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0579E1C28B74BAF0090F90D /* Build configuration list for PBXNativeTarget "KeyValueContainer watchOS" */;
+			buildPhases = (
+				C0579E1328B74BAF0090F90D /* Headers */,
+				C0579E1428B74BAF0090F90D /* Sources */,
+				C0579E1528B74BAF0090F90D /* Frameworks */,
+				C0579E1628B74BAF0090F90D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "KeyValueContainer watchOS";
+			productName = "KeyValueContainer watchOS";
+			productReference = C0579E1828B74BAF0090F90D /* KeyValueContainer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		C057F00D23CB8EEB00C2D895 /* KeyValueContainer iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C057F02223CB8EEB00C2D895 /* Build configuration list for PBXNativeTarget "KeyValueContainer iOS" */;
@@ -260,6 +490,7 @@
 			);
 			dependencies = (
 				C057F01A23CB8EEB00C2D895 /* PBXTargetDependency */,
+				C039764D28B69F8B00B3CE1C /* PBXTargetDependency */,
 			);
 			name = "KeyValueContainer Tests iOS";
 			productName = KeyValueContainerTests;
@@ -297,6 +528,7 @@
 			);
 			dependencies = (
 				C0A01A3423CB90F200AC2C3A /* PBXTargetDependency */,
+				C039764F28B69FA200B3CE1C /* PBXTargetDependency */,
 			);
 			name = "KeyValueContainer Tests macOS";
 			productName = "KeyValueContainer macOSTests";
@@ -334,6 +566,8 @@
 			);
 			dependencies = (
 				C0A01A5223CB92EB00AC2C3A /* PBXTargetDependency */,
+				C039765128B69FA400B3CE1C /* PBXTargetDependency */,
+				C03976B028B6A2BE00B3CE1C /* PBXTargetDependency */,
 			);
 			name = "KeyValueContainer Tests tvOS";
 			productName = "KeyValueContainer tvOSTests";
@@ -346,16 +580,26 @@
 		C057F00523CB8EEB00C2D895 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
 				ORGANIZATIONNAME = "Almaz Ibragimov";
 				TargetAttributes = {
+					C039767928B6A19900B3CE1C = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					C04BF59C28B6979E005F3BEB = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					C0579E1728B74BAF0090F90D = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
 					C057F00D23CB8EEB00C2D895 = {
 						CreatedOnToolsVersion = 11.3;
 						LastSwiftMigration = 1130;
 					};
 					C057F01623CB8EEB00C2D895 = {
 						CreatedOnToolsVersion = 11.3;
+						TestTargetID = C04BF59C28B6979E005F3BEB;
 					};
 					C0A01A2823CB90F200AC2C3A = {
 						CreatedOnToolsVersion = 11.3;
@@ -370,6 +614,7 @@
 					};
 					C0A01A4E23CB92EB00AC2C3A = {
 						CreatedOnToolsVersion = 11.3;
+						TestTargetID = C039767928B6A19900B3CE1C;
 					};
 				};
 			};
@@ -389,14 +634,40 @@
 				C057F00D23CB8EEB00C2D895 /* KeyValueContainer iOS */,
 				C0A01A2823CB90F200AC2C3A /* KeyValueContainer macOS */,
 				C0A01A4623CB92EB00AC2C3A /* KeyValueContainer tvOS */,
+				C0579E1728B74BAF0090F90D /* KeyValueContainer watchOS */,
 				C057F01623CB8EEB00C2D895 /* KeyValueContainer Tests iOS */,
 				C0A01A3023CB90F200AC2C3A /* KeyValueContainer Tests macOS */,
 				C0A01A4E23CB92EB00AC2C3A /* KeyValueContainer Tests tvOS */,
+				C04BF59C28B6979E005F3BEB /* KeyValueContainer Tests Host iOS */,
+				C039767928B6A19900B3CE1C /* KeyValueContainer Tests Host tvOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		C039767828B6A19900B3CE1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C03976AD28B6A27200B3CE1C /* Launch.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C04BF59B28B6979E005F3BEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C04BF5AC28B6979F005F3BEB /* Launch.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0579E1628B74BAF0090F90D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C057F00C23CB8EEB00C2D895 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -499,12 +770,46 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		C039767628B6A19900B3CE1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C039768D28B6A1AE00B3CE1C /* AppDelegate.swift in Sources */,
+				C039768C28B6A1AE00B3CE1C /* ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C04BF59928B6979E005F3BEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C03976B228B6A62C00B3CE1C /* ViewController.swift in Sources */,
+				C03976B128B6A62700B3CE1C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0579E1428B74BAF0090F90D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0579E2228B74BD60090F90D /* PersistentStorage.swift in Sources */,
+				C0579E2128B74BD30090F90D /* MemoryStorage.swift in Sources */,
+				C0579E1F28B74BCA0090F90D /* KeyValueContainer.swift in Sources */,
+				C0579E2328B74BD90090F90D /* KeyValueStorage.swift in Sources */,
+				C0579E2428B74BEF0090F90D /* KeychainAccessibility.swift in Sources */,
+				C0579E2528B74BEF0090F90D /* KeychainStorage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C057F00A23CB8EEB00C2D895 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C01C142523CBC98A004108B4 /* PersistentStorage.swift in Sources */,
 				C01C141623CBB3E3004108B4 /* KeyValueContainer.swift in Sources */,
+				C06DC98028B638EA0076EDFA /* KeychainStorage.swift in Sources */,
+				C03976BD28B73FBB00B3CE1C /* MemoryStorage.swift in Sources */,
+				C06DC97E28B637670076EDFA /* KeychainAccessibility.swift in Sources */,
 				C01C141A23CBB451004108B4 /* KeyValueStorage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,6 +819,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C057F01D23CB8EEB00C2D895 /* KeyValueContainerTests.swift in Sources */,
+				C04BF59628B691F5005F3BEB /* KeychainStorageTests.swift in Sources */,
+				C03976BF28B7422900B3CE1C /* MemoryStorageTests.swift in Sources */,
 				C01C142123CBB84D004108B4 /* MockKeyValueStorage.swift in Sources */,
 				C01C142923CBCA91004108B4 /* PersistentStorageTests.swift in Sources */,
 			);
@@ -524,8 +831,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C01C142623CBC98A004108B4 /* PersistentStorage.swift in Sources */,
+				C06DC98128B638EA0076EDFA /* KeychainStorage.swift in Sources */,
 				C01C141723CBB3E3004108B4 /* KeyValueContainer.swift in Sources */,
+				C03976BC28B73FBA00B3CE1C /* MemoryStorage.swift in Sources */,
 				C01C141B23CBB451004108B4 /* KeyValueStorage.swift in Sources */,
+				C06DC98328B638ED0076EDFA /* KeychainAccessibility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -534,6 +844,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0A01A4023CB912300AC2C3A /* KeyValueContainerTests.swift in Sources */,
+				C03976C028B7422900B3CE1C /* MemoryStorageTests.swift in Sources */,
 				C01C142223CBB84E004108B4 /* MockKeyValueStorage.swift in Sources */,
 				C01C142A23CBCA91004108B4 /* PersistentStorageTests.swift in Sources */,
 			);
@@ -544,8 +855,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C01C142723CBC98A004108B4 /* PersistentStorage.swift in Sources */,
+				C06DC98228B638EA0076EDFA /* KeychainStorage.swift in Sources */,
 				C01C141823CBB3E3004108B4 /* KeyValueContainer.swift in Sources */,
+				C03976BB28B73FBA00B3CE1C /* MemoryStorage.swift in Sources */,
 				C01C141C23CBB451004108B4 /* KeyValueStorage.swift in Sources */,
+				C06DC98428B638EE0076EDFA /* KeychainAccessibility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -554,6 +868,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0A01A6023CB92FB00AC2C3A /* KeyValueContainerTests.swift in Sources */,
+				C04BF59828B691F5005F3BEB /* KeychainStorageTests.swift in Sources */,
+				C03976C128B7422900B3CE1C /* MemoryStorageTests.swift in Sources */,
 				C01C142323CBB84E004108B4 /* MockKeyValueStorage.swift in Sources */,
 				C01C142B23CBCA91004108B4 /* PersistentStorageTests.swift in Sources */,
 			);
@@ -562,6 +878,26 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		C039764D28B69F8B00B3CE1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C04BF59C28B6979E005F3BEB /* KeyValueContainer Tests Host iOS */;
+			targetProxy = C039764C28B69F8B00B3CE1C /* PBXContainerItemProxy */;
+		};
+		C039764F28B69FA200B3CE1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C04BF59C28B6979E005F3BEB /* KeyValueContainer Tests Host iOS */;
+			targetProxy = C039764E28B69FA200B3CE1C /* PBXContainerItemProxy */;
+		};
+		C039765128B69FA400B3CE1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C04BF59C28B6979E005F3BEB /* KeyValueContainer Tests Host iOS */;
+			targetProxy = C039765028B69FA400B3CE1C /* PBXContainerItemProxy */;
+		};
+		C03976B028B6A2BE00B3CE1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C039767928B6A19900B3CE1C /* KeyValueContainer Tests Host tvOS */;
+			targetProxy = C03976AF28B6A2BE00B3CE1C /* PBXContainerItemProxy */;
+		};
 		C057F01A23CB8EEB00C2D895 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C057F00D23CB8EEB00C2D895 /* KeyValueContainer iOS */;
@@ -579,7 +915,200 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		C04BF5AA28B6979F005F3BEB /* Launch.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C04BF5AB28B6979F005F3BEB /* Base */,
+			);
+			name = Launch.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		C039768928B6A19A00B3CE1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TestsHost/Info.plist;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.almazrafi.KeyValueContainer.TestsHost;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 15.4;
+			};
+			name = Debug;
+		};
+		C039768A28B6A19A00B3CE1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TestsHost/Info.plist;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.almazrafi.KeyValueContainer.TestsHost;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 15.4;
+			};
+			name = Release;
+		};
+		C04BF5AF28B6979F005F3BEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TestsHost/Info.plist;
+				INFOPLIST_KEY_NSPrincipalClass = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.almazrafi.KeyValueContainer.TestsHost;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C04BF5B028B6979F005F3BEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TestsHost/Info.plist;
+				INFOPLIST_KEY_NSPrincipalClass = "";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.almazrafi.KeyValueContainer.TestsHost;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		C0579E1D28B74BAF0090F90D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Sources/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Almaz Ibragimov. All rights reserved.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.almazrafi.KeyValueContainer;
+				PRODUCT_NAME = KeyValueContainer;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = 4;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		C0579E1E28B74BAF0090F90D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Sources/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Almaz Ibragimov. All rights reserved.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.almazrafi.KeyValueContainer;
+				PRODUCT_NAME = KeyValueContainer;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = 4;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
 		C057F02023CB8EEB00C2D895 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -705,6 +1234,7 @@
 		C057F02323CB8EEB00C2D895 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -734,6 +1264,7 @@
 		C057F02423CB8EEB00C2D895 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -775,6 +1306,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeyValueContainer Tests Host iOS.app/KeyValueContainer Tests Host iOS";
 				TVOS_DEPLOYMENT_TARGET = 10.0;
 				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
@@ -796,6 +1328,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeyValueContainer Tests Host iOS.app/KeyValueContainer Tests Host iOS";
 				TVOS_DEPLOYMENT_TARGET = 10.0;
 				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
@@ -804,6 +1337,7 @@
 		C0A01A3B23CB90F200AC2C3A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -834,6 +1368,7 @@
 		C0A01A3C23CB90F200AC2C3A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -907,6 +1442,7 @@
 		C0A01A5923CB92EB00AC2C3A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -937,6 +1473,7 @@
 		C0A01A5A23CB92EB00AC2C3A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -980,6 +1517,7 @@
 				SDKROOT = appletvos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeyValueContainer Tests Host tvOS.app/KeyValueContainer Tests Host tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.0;
 				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
@@ -1002,6 +1540,7 @@
 				SDKROOT = appletvos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeyValueContainer Tests Host tvOS.app/KeyValueContainer Tests Host tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.0;
 				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
@@ -1010,6 +1549,33 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C039768828B6A19A00B3CE1C /* Build configuration list for PBXNativeTarget "KeyValueContainer Tests Host tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C039768928B6A19A00B3CE1C /* Debug */,
+				C039768A28B6A19A00B3CE1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C04BF5AE28B6979F005F3BEB /* Build configuration list for PBXNativeTarget "KeyValueContainer Tests Host iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C04BF5AF28B6979F005F3BEB /* Debug */,
+				C04BF5B028B6979F005F3BEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0579E1C28B74BAF0090F90D /* Build configuration list for PBXNativeTarget "KeyValueContainer watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0579E1D28B74BAF0090F90D /* Debug */,
+				C0579E1E28B74BAF0090F90D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C057F00823CB8EEB00C2D895 /* Build configuration list for PBXProject "KeyValueContainer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C057F00D23CB8EEB00C2D895"
+               BlueprintIdentifier = "C0579E1728B74BAF0090F90D"
                BuildableName = "KeyValueContainer.framework"
-               BlueprintName = "KeyValueContainer iOS"
+               BlueprintName = "KeyValueContainer watchOS"
                ReferencedContainer = "container:KeyValueContainer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -26,29 +26,8 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      codeCoverageEnabled = "YES"
-      onlyGenerateCoverageForSpecifiedTargets = "YES">
-      <CodeCoverageTargets>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C057F00D23CB8EEB00C2D895"
-            BuildableName = "KeyValueContainer.framework"
-            BlueprintName = "KeyValueContainer iOS"
-            ReferencedContainer = "container:KeyValueContainer.xcodeproj">
-         </BuildableReference>
-      </CodeCoverageTargets>
+      shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C057F01623CB8EEB00C2D895"
-               BuildableName = "KeyValueContainer Tests iOS.xctest"
-               BlueprintName = "KeyValueContainer Tests iOS"
-               ReferencedContainer = "container:KeyValueContainer.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
@@ -71,9 +50,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C057F00D23CB8EEB00C2D895"
+            BlueprintIdentifier = "C0579E1728B74BAF0090F90D"
             BuildableName = "KeyValueContainer.framework"
-            BlueprintName = "KeyValueContainer iOS"
+            BlueprintName = "KeyValueContainer watchOS"
             ReferencedContainer = "container:KeyValueContainer.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

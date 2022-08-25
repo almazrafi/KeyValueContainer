@@ -2,31 +2,39 @@ import XCTest
 
 @testable import KeyValueContainer
 
-class PersistentStorageTests: XCTestCase {
+class KeychainStorageTests: XCTestCase {
 
     // MARK: - Instance Properties
 
-    private var storage: PersistentStorage!
+    private var storage: KeychainStorage!
 
     // MARK: - Instance Methods
 
     func testThatStorageProperlyInitializesWithDefaultArguments() {
-        XCTAssertTrue(storage.userDefaults === UserDefaults.standard)
-        XCTAssertNil(storage.suiteName)
-        XCTAssertEqual(storage.keyPrefix, "")
+        XCTAssertTrue(storage.accessibility == .afterFirstUnlock)
+        XCTAssertNil(storage.service)
+        XCTAssertNil(storage.accessGroup)
+        XCTAssertFalse(storage.synchronizable)
     }
 
     func testThatStorageProperlyInitializesWithCustomArguments() {
-        let suiteName = "foo"
-        let keyPrefix = "baz"
+        let accessibility = KeychainAccessibility.whenUnlockedThisDeviceOnly
+        let service = "foo"
+        let accessGroup = "bar"
+        let synchronizable = true
 
-        storage = PersistentStorage(suiteName: suiteName, keyPrefix: keyPrefix)
+        storage = KeychainStorage(
+            accessibility: accessibility,
+            service: service,
+            accessGroup: accessGroup,
+            synchronizable: synchronizable
+        )
 
-        XCTAssertEqual(storage.suiteName, suiteName)
-        XCTAssertEqual(storage.keyPrefix, keyPrefix)
+        XCTAssertEqual(storage.accessibility, accessibility)
+        XCTAssertEqual(storage.service, service)
+        XCTAssertEqual(storage.accessGroup, accessGroup)
+        XCTAssertEqual(storage.synchronizable, synchronizable)
     }
-
-    // MARK: -
 
     func testThatStorageDoesNotProvideKeysWhenDataExists() {
         let firstKey = "foo"
@@ -96,7 +104,7 @@ class PersistentStorageTests: XCTestCase {
         let key = "foobar"
         let value = 123
 
-        XCTAssertTrue(storage.setValue(value, forKey: key))
+        storage.setValue(value, forKey: key)
 
         XCTAssertEqual(storage.value(of: Int.self, forKey: key), value)
     }
@@ -105,7 +113,7 @@ class PersistentStorageTests: XCTestCase {
         let key = "foobar"
         let value: Float = 1.23
 
-        XCTAssertTrue(storage.setValue(value, forKey: key))
+        storage.setValue(value, forKey: key)
 
         XCTAssertEqual(storage.value(of: Float.self, forKey: key), value)
     }
@@ -114,7 +122,7 @@ class PersistentStorageTests: XCTestCase {
         let key = "foobar"
         let value: Double = 12.3
 
-        XCTAssertTrue(storage.setValue(value, forKey: key))
+        storage.setValue(value, forKey: key)
 
         XCTAssertEqual(storage.value(of: Double.self, forKey: key), value)
     }
@@ -123,7 +131,7 @@ class PersistentStorageTests: XCTestCase {
         let key = "foobar"
         let value = Date(timeIntervalSinceReferenceDate: 123.456)
 
-        XCTAssertTrue(storage.setValue(value, forKey: key))
+        storage.setValue(value, forKey: key)
 
         XCTAssertEqual(storage.value(of: Date.self, forKey: key), value)
     }
@@ -132,7 +140,7 @@ class PersistentStorageTests: XCTestCase {
         let key = "foobar"
         let value = Data([1, 2, 3])
 
-        XCTAssertTrue(storage.setValue(value, forKey: key))
+        storage.setValue(value, forKey: key)
 
         XCTAssertEqual(storage.value(of: Data.self, forKey: key), value)
     }
@@ -141,7 +149,7 @@ class PersistentStorageTests: XCTestCase {
         let key = "foobar"
         let value = "qwe"
 
-        XCTAssertTrue(storage.setValue(value, forKey: key))
+        storage.setValue(value, forKey: key)
 
         XCTAssertEqual(storage.value(of: String.self, forKey: key), value)
     }
@@ -150,7 +158,7 @@ class PersistentStorageTests: XCTestCase {
         let key = "foobar"
         let value = URL(string: "https://apple.com")!
 
-        XCTAssertTrue(storage.setValue(value, forKey: key))
+        storage.setValue(value, forKey: key)
 
         XCTAssertEqual(storage.value(of: URL.self, forKey: key), value)
     }
@@ -159,7 +167,7 @@ class PersistentStorageTests: XCTestCase {
         let key = "foobar"
         let value = ["qwe", "asd", "zxc"]
 
-        XCTAssertTrue(storage.setValue(value, forKey: key))
+        storage.setValue(value, forKey: key)
 
         XCTAssertEqual(storage.value(of: [String].self, forKey: key), value)
     }
@@ -168,7 +176,7 @@ class PersistentStorageTests: XCTestCase {
         let key = "foobar"
         let value: CGFloat = 1.23
 
-        XCTAssertTrue(storage.setValue(value, forKey: key))
+        storage.setValue(value, forKey: key)
 
         XCTAssertEqual(storage.value(of: CGFloat.self, forKey: key), value)
     }
@@ -177,7 +185,7 @@ class PersistentStorageTests: XCTestCase {
         let key = "foobar"
         let value = CodableStruct(foo: 123, bar: "qwe")
 
-        XCTAssertTrue(storage.setValue(value, forKey: key))
+        storage.setValue(value, forKey: key)
 
         XCTAssertEqual(storage.value(of: CodableStruct.self, forKey: key), value)
     }
@@ -198,7 +206,7 @@ class PersistentStorageTests: XCTestCase {
     func testThatStorageProperlyMakesContainersWithCustomKeyAndDefaultValue() {
         let container = storage.containerWithCustomKeyAndDefaultValue
 
-        XCTAssertTrue(container.storage as? PersistentStorage === storage)
+        XCTAssertTrue(container.storage as? KeychainStorage === storage)
         XCTAssertEqual(container.key, "foobar")
         XCTAssertEqual(container.defaultValue, "qwe")
     }
@@ -206,101 +214,9 @@ class PersistentStorageTests: XCTestCase {
     func testThatStorageProperlyMakesContainersWithPropertyNameAsKey() {
         let container = storage.containerWithPropertyNameAsKey
 
-        XCTAssertTrue(container.storage as? PersistentStorage === storage)
+        XCTAssertTrue(container.storage as? KeychainStorage === storage)
         XCTAssertEqual(container.key, "containerWithPropertyNameAsKey")
         XCTAssertNil(container.defaultValue)
-    }
-
-    // MARK: -
-
-    func testThatStorageRestoresBooleanValuesStoredViaUserDefaults() {
-        let key = "foobar"
-        let value = true
-
-        storage.userDefaults.set(value, forKey: key)
-
-        XCTAssertEqual(storage.value(of: Bool.self, forKey: key), value)
-    }
-
-    func testThatStorageRestoresIntValuesStoredViaUserDefaults() {
-        let key = "foobar"
-        let value = 123
-
-        storage.userDefaults.set(value, forKey: key)
-
-        XCTAssertEqual(storage.value(of: Int.self, forKey: key), value)
-    }
-
-    func testThatStorageRestoresFloatValuesStoredViaUserDefaults() {
-        let key = "foobar"
-        let value: Float = 1.23
-
-        storage.userDefaults.set(value, forKey: key)
-
-        XCTAssertEqual(storage.value(of: Float.self, forKey: key), value)
-    }
-
-    func testThatStorageRestoresDoubleValuesStoredViaUserDefaults() {
-        let key = "foobar"
-        let value: Double = 12.3
-
-        storage.userDefaults.set(value, forKey: key)
-
-        XCTAssertEqual(storage.value(of: Double.self, forKey: key), value)
-    }
-
-    func testThatStorageRestoresDatesStoredViaUserDefaults() {
-        let key = "foobar"
-        let value = Date(timeIntervalSinceReferenceDate: 123.456)
-
-        storage.userDefaults.set(value, forKey: key)
-
-        XCTAssertEqual(storage.value(of: Date.self, forKey: key), value)
-    }
-
-    func testThatStorageRestoresRawDataStoredViaUserDefaults() {
-        let key = "foobar"
-        let value = Data([1, 2, 3])
-
-        storage.userDefaults.set(value, forKey: key)
-
-        XCTAssertEqual(storage.value(of: Data.self, forKey: key), value)
-    }
-
-    func testThatStorageRestoresStringsStoredViaUserDefaults() {
-        let key = "foobar"
-        let value = "qwe"
-
-        storage.userDefaults.set(value, forKey: key)
-
-        XCTAssertEqual(storage.value(of: String.self, forKey: key), value)
-    }
-
-    func testThatStorageRestoresURLsStoredViaUserDefaults() {
-        let key = "foobar"
-        let value = URL(string: "https://apple.com")!
-
-        storage.userDefaults.set(value, forKey: key)
-
-        XCTAssertEqual(storage.value(of: URL.self, forKey: key), value)
-    }
-
-    func testThatStorageRestoresStringArraysStoredViaUserDefaults() {
-        let key = "foobar"
-        let value = ["qwe", "asd", "zxc"]
-
-        storage.userDefaults.set(value, forKey: key)
-
-        XCTAssertEqual(storage.value(of: [String].self, forKey: key), value)
-    }
-
-    func testThatStorageRestoresCodablePrimitivesStoredViaUserDefaults() {
-        let key = "foobar"
-        let value: CGFloat = 1.23
-
-        storage.userDefaults.set(value, forKey: key)
-
-        XCTAssertEqual(storage.value(of: CGFloat.self, forKey: key), value)
     }
 
     // MARK: - XCTestCase
@@ -308,7 +224,7 @@ class PersistentStorageTests: XCTestCase {
     override func setUp() {
         super.setUp()
 
-        storage = PersistentStorage.default
+        storage = KeychainStorage.default
     }
 
     override func tearDown() {
@@ -326,7 +242,7 @@ private struct CodableStruct: Codable, Equatable {
     let bar: String
 }
 
-private extension PersistentStorage {
+private extension KeychainStorage {
 
     // MARK: - Instance Properties
 
