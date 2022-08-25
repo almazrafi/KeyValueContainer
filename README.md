@@ -77,7 +77,7 @@ $ brew install carthage
 
 To integrate KeyValueContainer into your Xcode project using Carthage, specify it in your `Cartfile`:
 ```ogdl
-github "almazrafi/KeyValueContainer" ~> 1.0.1
+github "almazrafi/KeyValueContainer" ~> 1.1.0
 ```
 
 Finally run `carthage update` to build the framework and drag the built `KeyValueContainer.framework` into your Xcode project.
@@ -89,7 +89,7 @@ The [Swift Package Manager](https://swift.org/package-manager/) is a tool for ma
 To integrate KeyValueContainer into your Xcode project using Swift Package Manager,
 add the following as a dependency to your `Package.swift`:
 ```swift
-.package(url: "https://github.com/almazrafi/KeyValueContainer.git", from: "1.0.1")
+.package(url: "https://github.com/almazrafi/KeyValueContainer.git", from: "1.1.0")
 ```
 and then specify `"KeyValueContainer"` as a dependency of the Target in which you wish to use KeyValueContainer.
 
@@ -104,7 +104,7 @@ let package = Package(
         .library(name: "MyPackage", targets: ["MyPackage"])
     ],
     dependencies: [
-        .package(url: "https://github.com/almazrafi/KeyValueContainer.git", from: "1.0.1")
+        .package(url: "https://github.com/almazrafi/KeyValueContainer.git", from: "1.1.0")
     ],
     targets: [
         .target(name: "MyPackage", dependencies: ["KeyValueContainer"])
