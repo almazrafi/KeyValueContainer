@@ -36,7 +36,6 @@
 		C04BF59628B691F5005F3BEB /* KeychainStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04BF59528B691F5005F3BEB /* KeychainStorageTests.swift */; };
 		C04BF59828B691F5005F3BEB /* KeychainStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04BF59528B691F5005F3BEB /* KeychainStorageTests.swift */; };
 		C04BF5AC28B6979F005F3BEB /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C04BF5AA28B6979F005F3BEB /* Launch.storyboard */; };
-		C0579E1B28B74BAF0090F90D /* KeyValueContainer_watchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = C0579E1A28B74BAF0090F90D /* KeyValueContainer_watchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C0579E1F28B74BCA0090F90D /* KeyValueContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01C141523CBB3E3004108B4 /* KeyValueContainer.swift */; };
 		C0579E2028B74BCE0090F90D /* KeyValueContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = C057F01123CB8EEB00C2D895 /* KeyValueContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C0579E2128B74BD30090F90D /* MemoryStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03976B728B73E3F00B3CE1C /* MemoryStorage.swift */; };
@@ -131,7 +130,6 @@
 		C04BF5AB28B6979F005F3BEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Launch.storyboard; sourceTree = "<group>"; };
 		C04BF5AD28B6979F005F3BEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0579E1828B74BAF0090F90D /* KeyValueContainer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KeyValueContainer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C0579E1A28B74BAF0090F90D /* KeyValueContainer_watchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyValueContainer_watchOS.h; sourceTree = "<group>"; };
 		C057F00E23CB8EEB00C2D895 /* KeyValueContainer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KeyValueContainer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C057F01123CB8EEB00C2D895 /* KeyValueContainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyValueContainer.h; sourceTree = "<group>"; };
 		C057F01223CB8EEB00C2D895 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -274,21 +272,12 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
-		C0579E1928B74BAF0090F90D /* KeyValueContainer watchOS */ = {
-			isa = PBXGroup;
-			children = (
-				C0579E1A28B74BAF0090F90D /* KeyValueContainer_watchOS.h */,
-			);
-			path = "KeyValueContainer watchOS";
-			sourceTree = "<group>";
-		};
 		C057F00423CB8EEB00C2D895 = {
 			isa = PBXGroup;
 			children = (
 				C057F01023CB8EEB00C2D895 /* Sources */,
 				C057F01B23CB8EEB00C2D895 /* Tests */,
 				C04BF59E28B6979E005F3BEB /* TestsHost */,
-				C0579E1928B74BAF0090F90D /* KeyValueContainer watchOS */,
 				C057F00F23CB8EEB00C2D895 /* Products */,
 				C0A01A6323CB9B0A00AC2C3A /* Scripts */,
 				C0A01A1B23CB901C00AC2C3A /* .codecov.yml */,
@@ -376,7 +365,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0579E2028B74BCE0090F90D /* KeyValueContainer.h in Headers */,
-				C0579E1B28B74BAF0090F90D /* KeyValueContainer_watchOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
