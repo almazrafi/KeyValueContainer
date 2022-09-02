@@ -1,13 +1,13 @@
 # KeyValueContainer
-[![Build Status](https://github.com/almazrafi/KeyValueContainer/workflows/CI/badge.svg?branch=master)](https://github.com/almazrafi/KeyValueContainer/actions)
+[![Build Status](https://github.com/almazrafi/KeyValueContainer/workflows/CI/badge.svg?branch=main)](https://github.com/almazrafi/KeyValueContainer/actions)
 [![Codecov](https://codecov.io/gh/almazrafi/KeyValueContainer/branch/master/graph/badge.svg)](https://codecov.io/gh/almazrafi/KeyValueContainer)
-[![Cocoapods](https://img.shields.io/cocoapods/v/KeyValueContainer.svg?style=flat)](http://cocoapods.org/pods/KeyValueContainer)
-[![Carthage compatible](https://img.shields.io/badge/Carthage-Compatible-brightgreen.svg?style=flat)](https://github.com/Carthage/Carthage)
-[![SPM compatible](https://img.shields.io/badge/SPM-Compatible-brightgreen.svg?style=flat)](https://swift.org/package-manager/)
-[![Platforms](https://img.shields.io/cocoapods/p/KeyValueContainer.svg?style=flat)](https://developer.apple.com/discover/)
-[![Xcode](https://img.shields.io/badge/Xcode-11-blue.svg)](https://developer.apple.com/xcode)
-[![Swift](https://img.shields.io/badge/Swift-5.1-orange.svg)](https://swift.org)
-[![License](https://img.shields.io/github/license/almazrafi/KeyValueContainer.svg)](https://opensource.org/licenses/MIT)
+[![Cocoapods](https://img.shields.io/cocoapods/v/KeyValueContainer)](http://cocoapods.org/pods/KeyValueContainer)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-Compatible-brightgreen)](https://github.com/Carthage/Carthage)
+[![SPM compatible](https://img.shields.io/badge/SPM-Compatible-brightgreen)](https://swift.org/package-manager/)
+[![Platforms](https://img.shields.io/cocoapods/p/KeyValueContainer)](https://developer.apple.com/discover/)
+[![Xcode](https://img.shields.io/badge/Xcode-12-blue)](https://developer.apple.com/xcode)
+[![Swift](https://img.shields.io/badge/Swift-5.1-orange)](https://swift.org)
+[![License](https://img.shields.io/github/license/almazrafi/KeyValueContainer)](https://opensource.org/licenses/MIT)
 
 ## Requirements
 - iOS 10.0+ / macOS 10.12+ / watchOS 3.0+ / tvOS 10.0+
