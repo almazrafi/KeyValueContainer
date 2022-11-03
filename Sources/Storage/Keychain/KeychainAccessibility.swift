@@ -19,12 +19,6 @@ public enum KeychainAccessibility {
     /// Thus, after restoring from a backup of a different device, these items will not be present.
     case afterFirstUnlockThisDeviceOnly
 
-    /// The data in the keychain item can always be accessed regardless of whether the device is locked.
-    ///
-    /// This is not recommended for application use.
-    /// Items with this attribute migrate to a new device when using encrypted backups.
-    case always
-
     /// The data in the keychain can only be accessed when the device is unlocked.
     /// Only available if a passcode is set on the device.
     ///
@@ -34,13 +28,6 @@ public enum KeychainAccessibility {
     /// No items can be stored in this class on devices without a passcode.
     /// Disabling the device passcode causes all items in this class to be deleted.
     case whenPasscodeSetThisDeviceOnly
-
-    /// The data in the keychain item can always be accessed regardless of whether the device is locked.
-    ///
-    /// This is not recommended for application use.
-    /// Items with this attribute do not migrate to a new device.
-    /// Thus, after restoring from a backup of a different device, these items will not be present.
-    case alwaysThisDeviceOnly
 
     /// The data in the keychain item can be accessed only while the device is unlocked by the user.
     ///

@@ -59,14 +59,8 @@ public final class KeychainStorage: KeyValueStorage {
         case .afterFirstUnlockThisDeviceOnly:
             return kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly as String
 
-        case .always:
-            return kSecAttrAccessibleAlways as String
-
         case .whenPasscodeSetThisDeviceOnly:
             return kSecAttrAccessibleWhenPasscodeSetThisDeviceOnly as String
-
-        case .alwaysThisDeviceOnly:
-            return kSecAttrAccessibleAlwaysThisDeviceOnly as String
 
         case .whenUnlocked:
             return kSecAttrAccessibleWhenUnlocked as String
